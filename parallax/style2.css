@@ -1,0 +1,54 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.phone{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text{
+    position: absolute;
+    left:250px;
+    color: white;
+    font-size: 150px;
+}
+
+.description{
+    text-align: center;
+    color: white;
+}
+
+.description--detail{
+    color: white;
+    max-width: 50vw;
+    text-align: center;
+    margin: auto;
+}
+
+.description--box{
+    min-height: 350px;
+    background-color: black;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <img id='background' class='background' src="./image/background1.jpg" alt="earth background">
+        <img id='phone' class='phone' src="./image/phone2.png" alt="phone">
+        <h2 id='text' class="text">Alpha 552</h2>
+    </div>
+    <div class="description--box">
+        <h2 class='description'>Introduce brain new experience</h2>
+        <p class="description--detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus molestiae,
+            omnis accusantium quibusdam
+            illo soluta in quam totam! Saepe eos sit cupiditate modi, perferendis dignissimos magnam at alias magni
+            dolore?</p>
+    </div>
+
+    <script>
+
+        let background = document.getElementById('background');
+        let phone = document.getElementById('phone');
+        let text = document.getElementById('text');
+        window.addEventListener('scroll', function () {
+            var valuey = window.scrollY;
+            console.log(valuey)
+            phone.style.top = -valuey * 0.5 + 'px';
+            background.style.bottom = -valuey * 0.5 + 'px';
+            text.style.left = 250 - (valuey * 0.5) + 'px';
+        })
+
+    </script>
+
+</body>
+
+</html>
